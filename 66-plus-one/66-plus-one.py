@@ -1,15 +1,12 @@
 class Solution:
     def plusOne(self, a: List[int]) -> List[int]:
-        a[-1] += 1
-        for i in reversed(range(1,len(a))):
-            if a[i]!=10:
-                break
-            a[i]=0
-            a[i-1] += 1
-        
-        if a[0]==10:
-            a[0] = 1
-            a.append(0)
-            
+        num=""
+        for i in range(len(a)):
+            num+=str(a[i])
+        num=int(num)+1
+        num=str(num)
+        a=[]
+        for i in range(len(num)):
+            a.append(int(num[i]))
         return a
             
