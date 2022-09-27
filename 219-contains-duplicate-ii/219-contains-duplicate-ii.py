@@ -6,4 +6,4 @@ class Solution:
                 return True
             myDict[nums[idx]]=idx
         return False
-        
+        print(myDict)
