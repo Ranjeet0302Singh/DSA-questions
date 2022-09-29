@@ -2,10 +2,10 @@ class Solution:
     
 
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        store = dict()
+        myDict={}
         for i in range(len(nums)):
-            sec = target - nums[i]
-            if sec not in store:
-                store[nums[i]]=i
+            new=target-nums[i]
+            if new not in myDict:
+                myDict[nums[i]]=i
             else:
-                return [store[sec],i] 
+                return[myDict[new],i]
