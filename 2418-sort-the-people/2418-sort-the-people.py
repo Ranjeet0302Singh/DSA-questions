@@ -5,9 +5,8 @@ class Solution:
         for i in range(len(names)):
             myDict[heights[i]]=names[i]
         print(myDict)
-        # height=sorted(list(myDict.values()))
-        # print(height)
         for j in reversed(sorted(myDict.keys())):
             ans.append(myDict[j])
+        print(ans)
         return ans
             
