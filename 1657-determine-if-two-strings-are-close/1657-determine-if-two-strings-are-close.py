@@ -14,15 +14,15 @@ class Solution:
             else:
                 dict2[j]=1
         # print(dict1)
-        a=list(dict1.values())
-        b=list(dict2.values())
-        c=list(dict1.keys())
-        d=list(dict2.keys())
-        print(c)
-        print(d)
-        print(sorted(c))
-        print(sorted(d))
-        if sorted(a)==sorted(b) and sorted(c)==sorted(d):
+        # a=list(dict1.values())
+        # b=list(dict2.values())
+        # c=list(dict1.keys())
+        # d=list(dict2.keys())
+        # print(c)
+        # print(d)
+        # print(sorted(c))
+        # print(sorted(d))
+        if sorted(list(dict1.values()))==sorted(list(dict2.values())) and sorted(list(dict1.keys()))==sorted(list(dict2.keys())):
             return True
         else:
             return False
