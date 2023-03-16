@@ -1,3 +1,9 @@
 class Solution:
     def defangIPaddr(self, address: str) -> str:
-        return '[.]'.join(address.split('.'))
+        ans=''
+        for i in address:
+            if i=='.':
+                ans+='[.]'
+            else:
+                ans+=i
+        return ans
